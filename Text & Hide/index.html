@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Show / Hide Text - React</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+      .container { padding: 20px; max-width: 720px; margin: 0 auto; }
+      button { padding: 8px 12px; font-size: 16px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React (UMD) and Babel for in-browser JSX transpilation -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const { useState } = React;
+
+      function App() {
+        // Password example state
+        const [password, setPassword] = useState('');
+        const [showPassword, setShowPassword] = useState(false);
+
+        return (
+          <div className="container">
+            <h1>Show / Hide Text</h1>
+
+            <hr style={{ margin: '24px 0' }} />
+
+
+
+            <h2>Input</h2>
+            <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 8 }}>
+              <input
+                type={showPassword ? 'text' : 'password'}
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                placeholder="Enter Input"
+                style={{ padding: '8px 10px', fontSize: 16, flex: '1 1 auto' }}
+              />
+              <button onClick={() => setShowPassword(p => !p)}>
+                {showPassword ? 'Hide' : 'Show'}
+              </button>
+            </div>
+            {password && <p style={{ marginTop: 12 }}>Password length: {password.length} characters</p>}
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
