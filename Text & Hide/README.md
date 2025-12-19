@@ -24,3 +24,6 @@ Option B — Recommended: Run with Node (no Python)
 Notes
 - This example uses React via CDN and Babel in the browser so you don't need Vite or any bundler.
 - If you'd prefer a different Node-based setup (Parcel/webpack), tell me and I can set it up.
+Notes
+- This example uses React via CDN and Babel in the browser so you don't need Vite or any bundler.
+- If you'd prefer a different Node-based setup (Parcel/webpack), tell me and I can set it up.
