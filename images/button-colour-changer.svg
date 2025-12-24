@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect width="100%" height="100%" fill="#071021" />
+  <g transform="translate(40,40)">
+    <rect width="820" height="420" rx="12" fill="#0b1220" stroke="#0f1724" />
+    <text x="28" y="48" fill="#e6eef6" font-family="Segoe UI, Roboto, Arial" font-size="22">Button Colour Changer — Preview</text>
+    <g transform="translate(28,90)">
+      <rect x="0" y="0" width="200" height="48" rx="8" fill="#60A5FA" />
+      <text x="24" y="32" fill="#02112a" font-size="16" font-family="Segoe UI">Primary</text>
+      <rect x="240" y="0" width="200" height="48" rx="8" fill="transparent" stroke="#60A5FA" />
+      <text x="264" y="32" fill="#60A5FA" font-size="16">Ghost</text>
+      <rect x="0" y="96" width="520" height="120" rx="8" fill="#061022" stroke="#122034" />
+      <text x="12" y="30" fill="#9aa4b2" font-size="13">Controls: color picker • Apply • Random • Reset</text>
+    </g>
+    <text x="28" y="380" fill="#9aa4b2" font-size="12">Saved color persists via localStorage</text>
+  </g>
+</svg>

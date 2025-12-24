@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nagulan S — Portfolio</title>
+  <meta name="description" content="Nagulan S — portfolio showcasing projects and skills">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Nagulan S</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Hi, I'm <span class="accent">Nagulan S</span></h1>
+        <p class="lead">B.E CSE — passionate about web interfaces and small, useful tools.</p>
+        <p><a class="btn" href="#projects">View Projects</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p><strong>Education:</strong> B.E Computer Science and Engineering</p>
+        <p><strong>College:</strong> Agni College Of Technology</p>
+        <p>I'm focused on building small, accessible tools and UIs — projects include utility apps like counters, trackers, and UI demos.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>Todo App</h3>
+            <p>A simple todo list with add/remove and local storage support.</p>
+            <p><a class="link" href="projects/todo-app/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Click Tracker</h3>
+            <p>Tracks clicks and demonstrates event handling and persistence.</p>
+            <p><a class="link" href="projects/click-tracker/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Character Counter</h3>
+            <p>Counts characters in input and shows live updates.</p>
+            <p><a class="link" href="projects/character-counter/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Login UI</h3>
+            <p>Responsive login form UI (front-end only).</p>
+            <p><a class="link" href="projects/login-ui/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Hide/Text Display</h3>
+            <p>Toggle visibility of text blocks with animations.</p>
+            <p><a class="link" href="projects/hide-text-display/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Counter App</h3>
+            <p>Increment/decrement counter with keyboard accessibility.</p>
+            <p><a class="link" href="projects/counter-app/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Button Colour Changer</h3>
+            <p>Change button colors dynamically; demonstrates CSS variables.</p>
+            <p><a class="link" href="projects/button-colour-changer/index.html">View</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Theme Toggle</h3>
+            <p>Light/dark theme toggle using CSS custom properties and local storage.</p>
+            <p><a class="link" href="projects/theme-toggle/index.html">View</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Basics in Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, email me at <a href="mailto:theraquaza07@gmail.com">theraquaza07@gmail.com</a> or find me on <a href="https://github.com/nagu02" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Nagulan S. Built with ♥.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

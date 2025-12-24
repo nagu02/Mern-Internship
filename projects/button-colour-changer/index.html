@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Button Colour Changer — Nagulan</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    /* Project-specific styles */
+    .controls{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+    .controls input[type="color"]{width:48px;height:36px;border:0;padding:0;background:transparent}
+    .sample{background:var(--btn-bg, var(--accent));color:#012;border:0;padding:.6rem 1rem;border-radius:6px;margin-right:.5rem;font-weight:600}
+    .sample.ghost{background:transparent;border:1px solid var(--btn-bg, var(--accent));color:var(--btn-bg, var(--accent))}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Button Colour Changer</h1>
+    <p>Use the controls below to change the color of the sample buttons. Your choice is saved to <code>localStorage</code> so it persists across reloads.</p>
+
+    <div class="controls" aria-hidden="false">
+      <label for="colorInput">Pick a color: <input id="colorInput" type="color" value="#60a5fa" aria-label="Choose button color"></label>
+      <button id="applyBtn" class="btn">Apply</button>
+      <button id="randomBtn" class="btn">Random</button>
+      <button id="resetBtn" class="btn">Reset</button>
+    </div>
+
+    <div class="preview" style="margin-top:1rem">
+      <button class="sample">Primary</button>
+      <button class="sample ghost">Ghost</button>
+    </div>
+
+    <p style="margin-top:1rem"><a href="../..">← Back to portfolio</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
